@@ -1,4 +1,4 @@
-#import "../blocks.typ": *
+#import "../../modules/blocks.typ": *
 
 #let question_2 = [
   #question-block()[]
