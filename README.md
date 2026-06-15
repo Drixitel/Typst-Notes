@@ -120,9 +120,21 @@ Each directory is modular: you can import only the parts you need into your own 
 
 ## Example Output
 
-> **Placeholder:** Add a link to a sample PDF or screenshot here once available.
+
 > Example:
-> - [Download example PDF](docs/example.pdf)
+> - [Download example PDF](docs/notesDemo.pdf)
 > - Or view screenshots in `docs/` or `image_examples/`.
 
+[Desmos Example: Tangent line to a circle](https://www.desmos.com/calculator/9cyvuqjkpc)
+- [Typst drawing code](illustrations/physics/linearSpeedRotation.typ)
+
+![linearSpeedRotation](docs/image_examples/linearSpeedRotation.png)
+
+[Desmos Example: Line Segment Rotation](https://www.desmos.com/calculator/tbr6wdhvre)
+- [Typst drawing code](illustrations/math/vectorRotationIMG.typ)
+
+![vectorRotation](docs/image_examples/vectorRotation.png)
+
+[Typst drawing code: Parametic Line](illustrations/math/parametricLine.typ)
+![parametricLine](docs/image_examples/parametricLine.png)
 ---
