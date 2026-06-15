@@ -1,7 +1,7 @@
-#import "@preview/fancy-units:0.1.1": *
+#import "@preview/fancy-units:0.1.1": unit, num
 // modules
 #import "../config.typ": flex-caption
-#import "../modules/math.typ": unit-sqd
+
 
 // Content
 #let GRE-constants-formulas = [
@@ -21,23 +21,23 @@
       align: (right, right, left, center),
       [Rest mass of the electron], [$m_e=$], [#num[9.11e-31]], [kg],
       [Magnitude of the electron charge ], [$e=$], [#num[1.60e-19]], [C],
-      [Avagadro's number ], [$N_A=$], [#num[6.022e23]], [#unit-sqd("mol", -1)],
-      [Universal gas constant ], [$R=$], [#num[8.31]], [#unit[J / (mol K)]],
+      [Avagadro's number ], [$N_A=$], [#num[6.022e23]], [#unit[1/mol]],
+      [Universal gas constant ], [$R=$], [#num[8.31]], [J/(mol$dot$K)],
       [Boltzmann's constant ], [$k=$], [#num[1.38e-23]], [J/k],
       [Speed of light ], [$c=$], [#num[3.00e8]], [m/s],
-      [Planck's constant ], [$h=$], [#num[6.63e-34]], [#unit[J s]],
-      [], [$=$], [#num[4.14e-15]], [#unit[eV s]],
-      [], [#unit-sqd("ħ", "") =], [$h/(2pi)$],[],
-      [], [#unit-sqd("hc", "") =], [#num[1240]], [#unit[eV nm]],
-      [Vacuum permittivity ], [$ε_0=$], [#num[8.85e-12]], [#unit[C^2] / #unit[N m^2]],
-      [Vacuum permeability], [$μ_0=$], [$4 pi times 10^(-7)$] , [#unit[(Tm)/A]],
-      [Universal gravitational constant ], [$G=$], [#num[6.67e-11]], [#unit[N m^2 / kg^2]],
-      [Acceleration due to gravity ], [$g=$], [#num[9.80]], [#unit[m/s^2]],
+      [Planck's constant ], [$h=$], [#num[6.63e-34]], [J$dot$s],
+      [], [$=$], [#num[4.14e-15]], [eV$dot$s],
+      [], [ħ =], [$h/(2pi)$],[],
+      [], [hc =], [#num[1240]], [eV$dot$nm],
+      [Vacuum permittivity ], [$ε_0=$], [#num[8.85e-12]], [#unit[C^2]/(N$dot$ #unit[m^2])],
+      [Vacuum permeability], [$μ_0=$], [$4 pi times 10^(-7)$] , [T$dot$(m/A)],
+      [Universal gravitational constant ], [$G=$], [#num[6.67e-11]], [#unit[m^3]/(kg$dot$#unit[s^2])],
+      [Acceleration due to gravity ], [$g=$], [#num[9.80]], [m/#unit[s^2]],
       [Standard temperature and pressure], [STP:], [0°C and 1 atm], [],
-      [], [1 atm =], [#num[1.0e5]], [#unit[N/m^2]],
+      [], [1 atm =], [#num[1.0e5]], [N/#unit[m^2]],
       [], [], [], [Pa],
-      [1 angstrom ], [#unit-sqd("Å", "") =], [#num[1e-10]], [m],
-      [], [#unit-sqd("Å", "") =], [#num[0.1]], [nm],
+      [1 angstrom ], [Å =], [#num[1e-10]], [m],
+      [], [Å =], [#num[0.1]], [nm],
     ),
     table(
       columns:3,

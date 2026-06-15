@@ -1,6 +1,8 @@
-#import "../../modules/blocks.typ": simple-block, knowledge-block
+#import "@preview/fancy-units:0.1.1": unit
 #import "../../config.typ": no-indent
-#import "../../modules/math.typ": vecB, unit-sqd
+// modules
+#import "../../modules/blocks.typ": simple-block, knowledge-block
+#import "../../modules/math.typ": vecB
 
 
 #let periodic-motion = [
@@ -33,7 +35,7 @@
     $
     vecB(F_r) = -k vecB(r)
     $<hookes-law-equation>
-    where $k > 0$ with units of N/m = kg /#unit-sqd("s",2) , assuming no friction.
+    where $k > 0$ with units of N/m = kg / #unit[s^2], assuming no friction.
 
     * Harmonic Oscillator*: a system that undergoes SHM. Examples include a mass on a spring and a pendulum (*for small angles*). \
 

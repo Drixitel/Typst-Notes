@@ -7,8 +7,6 @@
 
 #let vecB(symbol) = $arrow(bold(#symbol))$
 
-#let unit-sqd(text, exp) = [#text#super[#exp]] // e.g unit("m", 2) => m^2
-
 #let color(x, fill:red) = {
   // call example: $ color(x, fill: #blue)$
   set text(fill: fill)
