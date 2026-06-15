@@ -57,5 +57,5 @@
 #rotation-rigid-bodies
 #periodic-motion
 #pagebreak()
-#bibliography("PhysicsLit.bib", style: "apa")
+#bibliography("refLiterature.bib", style: "apa")
 
