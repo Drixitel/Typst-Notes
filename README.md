@@ -12,6 +12,7 @@ A modular, multi-file Typst project for physics and mathematics notes, featuring
 - [Installation](#installation)
 - [Repository Layout](#repository-layout)
 - [Example Output](#example-output)
+- [Project Template (Mini Example)](#project-template)
 
 ---
 
@@ -138,3 +139,51 @@ Each directory is modular: you can import only the parts you need into your own 
 [Typst drawing code: Parametic Line](illustrations/math/parametricLine.typ)
 ![parametricLine](docs/image_examples/parametricLine.png)
 ---
+
+## Project Template
+A minimal, standalone Typst template is provided for users who want a clean starting point based on this project’s configuration and modules.
+
+* Location: `docs/project_template/`
+* Contents:
+
+  * `main.typ` — Example entry file with:
+
+    * Numbering examples
+
+    * Custom blocks (including `solution-block` with QED)
+
+    * APA-style citations
+
+    * Subfigures with `flex-caption`
+
+  * `config.typ` — Page configuration (margins, fonts, styles)
+
+  * `blocks.typ` — Block templates
+
+  * `subfigures.typ` — Subfigure and caption helpers
+
+  * `<your-project>.bib` — Bibliography file (APA style)
+
+The template:
+
+* Does not include content pages, practice questions, or large illustrations.
+
+* Does not include complex CETZ drawings or demo graphs.
+
+* Provides examples of:
+
+  * Section and problem numbering
+
+  * Styled blocks
+
+  * Citations
+
+  * Subfigures with long/short captions
+
+You can:
+
+* Use this as a minimal starting point for your own notes.
+
+* Copy specific modules (e.g., blocks.typ, subfigures.typ) into your own project.
+
+* Add your own content in content/, math/, physics/, etc., following the style from this template.
